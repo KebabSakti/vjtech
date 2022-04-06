@@ -50,14 +50,6 @@
       -animation-duration: 1000ms;
       -animation-iteration-count: infinite;
       -animation-timing-function: ease-in-out;
-      -webkit-animation-name: wiggle;
-      -ms-animation-name: wiggle;
-      -ms-animation-duration: 1000ms;
-      -webkit-animation-duration: 1000ms;
-      -webkit-animation-iteration-count: infinite;
-      -ms-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: ease-in-out;
-      -ms-animation-timing-function: ease-in-out;
     }
 
     @-webkit-keyframes wiggle {
@@ -270,7 +262,7 @@
           <i class="fas fa-map-marked-alt fa-3x mb-3 text-muted"></i>
           <!-- Make sure to change the email address in anchor text AND the link below! -->
           <a class="d-block" href="https://www.google.com/maps/place/CV+VJ+TECH+SOLUTION/@-0.454677,117.141646,17z/data=!3m1!4b1!4m5!3m4!1s0x2df679bfc5726ce1:0xf46320cf4e64357b!8m2!3d-0.4546824!4d117.1438347" target="_blank">
-          AW Syahranie. Perumahan Unmul, Jl. Dayak Modang No.28 Samarinda
+          Perumahan Grand Tsamara, Jalan PM Noor
           </a>
         </div>
         <div class="col-lg-4 mr-auto text-center">
