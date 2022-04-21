@@ -11,7 +11,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Edit Data Marketer</h4>
-                    <form class="forms-sample" action="{{route('marketer.update', ['id' => $data->id])}}" method="POST" enctype="multipart/form-data">
+                    <form class="forms-sample" action="{{route('marketer.update', $data)}}" method="POST" enctype="multipart/form-data">
                         @METHOD('PUT')
                         @csrf
                         <div class="form-group row">

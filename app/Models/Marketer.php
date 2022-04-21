@@ -10,6 +10,6 @@ class Marketer extends Model
 
     public function referrals()
     {
-        return $this->hasMany('App\Referral', 'phone', 'phone');
+        return $this->hasMany(Referral::class, 'phone', 'phone');
     }
 }

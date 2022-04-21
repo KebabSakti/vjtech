@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Gallery;
-use Cloudder;
+use App\Models\Gallery;
+use JD\Cloudder\Facades\Cloudder;
 
 class AdminImagesController extends Controller
 {
@@ -17,11 +17,11 @@ class AdminImagesController extends Controller
     {
         $Gallery = Gallery::find($id);
 
-        if($Gallery == null){
+        if ($Gallery == null) {
             return response()->json([
                 'status' => false,
                 'message' => 'Data tidak ditemukan',
-                'data' => ''
+                'data' => '',
             ]);
         }
 
@@ -34,7 +34,7 @@ class AdminImagesController extends Controller
         return response()->json([
             'status' => true,
             'message' => 'File berhasil dihapus',
-            'data' => ''
+            'data' => '',
         ]);
     }
 }

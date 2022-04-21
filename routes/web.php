@@ -23,7 +23,7 @@ Route::group(['prefix' => 'fcm'], function () {
     Route::post('send', [FcmController::class, 'sendNotification'])->name('fcm.send');
 });
 
-Route::group(['prefix' => 'admin', 'middleware' => 'user.admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('portfolio', AdminPortfolioController::class)->only(['index', 'store', 'create', 'destroy', 'edit', 'update']);
     Route::resource('marketer', MarketerController::class);
     Route::get('client', [ReferralController::class, 'client'])->name('client.index');

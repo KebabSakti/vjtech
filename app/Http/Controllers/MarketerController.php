@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Marketer;
 use Illuminate\Http\Request;
-use App\Referral;
-use App\Marketer;
 
 class MarketerController extends Controller
 {
@@ -40,7 +39,7 @@ class MarketerController extends Controller
     {
         Marketer::create($request->except('_token'));
 
-        return redirect()->back()->with('alert','Data berhasil tersimpan');
+        return redirect()->back()->with('alert', 'Data berhasil tersimpan');
     }
 
     /**
@@ -81,7 +80,7 @@ class MarketerController extends Controller
         $data->phone = $request->phone;
         $data->save();
 
-        return redirect()->back()->with('alert','Data berhasil terupdate');
+        return redirect()->back()->with('alert', 'Data berhasil terupdate');
     }
 
     /**
@@ -95,6 +94,6 @@ class MarketerController extends Controller
         $data = Marketer::findOrFail($id);
         $data->delete();
 
-        return redirect()->back()->with('alert','Data berhasil dihapus');
+        return redirect()->back()->with('alert', 'Data berhasil dihapus');
     }
 }

@@ -38,7 +38,7 @@
 	          		@php
 	          			$no = 1;
 	          		@endphp
-	          		
+
                     @foreach($data as $r)
                         <tr>
                         	<td>{{$no}}</td>
@@ -56,8 +56,8 @@
                             <td>{{Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $r->created_at)->format('d/m/Y H:i:s')}}</td>
                             <td>{{Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $r->updated_at)->format('d/m/Y H:i:s')}}</td>
                             <td>
-                            	<a href="{{route('portfolio.edit', ['id' => $r['id']])}}" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i> Edit</a>
-                                <form action="{{route('portfolio.destroy', ['id' => $r['id']])}}" method="POST" style="display: inline-block;">
+                            	<a href="{{route('portfolio.edit', $r)}}" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i> Edit</a>
+                                <form action="{{route('portfolio.destroy', $r)}}" method="POST" style="display: inline-block;">
                                     @method('DELETE')
                                     @csrf
                                     <button class="btn btn-xs btn-danger btn-del text-center" type="submit">

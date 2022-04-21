@@ -46,10 +46,18 @@
 
     .wa img {
       width: 60px;
-      -animation-name: wiggle;
-      -animation-duration: 1000ms;
-      -animation-iteration-count: infinite;
-      -animation-timing-function: ease-in-out;
+      animation-name: wiggle;
+      animation-duration: 1000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-name: wiggle;
+      -webkit-animation-duration: 1000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+      -ms-animation-name: wiggle;
+      -ms-animation-duration: 1000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: ease-in-out;
     }
 
     @-webkit-keyframes wiggle {
